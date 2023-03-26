@@ -51,7 +51,8 @@ hwmon /sys/devices/platform/coretemp.0/hwmon/hwmon7/temp1_input
 hwmon /sys/devices/platform/coretemp.0/hwmon/hwmon7/temp5_input
 hwmon /sys/devices/platform/coretemp.0/hwmon/hwmon7/temp2_input
 ```
-First 10 lines of my config contains Fan settings. These 10 lines are constant. 
+> NOTE: First 10 lines of my config contains Fan settings. These 10 lines are constant.
+
 Make it executable:
 ```bash
 chmod +x script_name.sh
