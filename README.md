@@ -1,4 +1,3 @@
-# ubuntu-bash-scripts
 # Thinkfan Config auto update:
 
 ## Create a bash script to Auto update ```thinkfan.conf``` file:
