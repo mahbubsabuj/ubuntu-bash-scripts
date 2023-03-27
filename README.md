@@ -66,6 +66,11 @@ And add the line below to service section:
 ExecStartPre=/path_to_your_script/update_thinkfan_hwmon.sh
 ```
 
+## To start thinkfan service at startup:
+```bash
+sudo systemctl enable thinkfan.service
+```
+
 # xinput-settings:
 ## To list all touchpad divers:
 ```bash
