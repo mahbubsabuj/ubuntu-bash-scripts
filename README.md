@@ -65,3 +65,29 @@ And add the line below to service section:
 ```bash
 ExecStartPre=/path_to_your_script/update_thinkfan_hwmon.sh
 ```
+
+## To start thinkfan service at startup:
+```bash
+sudo systemctl enable thinkfan.service
+```
+
+# xinput-settings:
+## To list all touchpad divers:
+```bash
+xinput
+```
+## After identifying your driver, to list all settings associated with that driver:
+```bash
+xinput list-props "DRIVER_NAME"
+```
+## To make a property true:
+```bash
+xinput set-prop "DRIVER_NAME" "PROP_NAME" 1 
+```
+>Note: To make it permanent, you need to put it to your config file. in my case i'm using bspwm. so i have put it to my bspwmrc file.
+> ```exec xinput set-prop "DRIVER_NAME" "PROP_NAME" 1```
+
+**Resource followed:**
+```link
+https://major.io/2021/07/18/tray-icons-in-i3/
+```
